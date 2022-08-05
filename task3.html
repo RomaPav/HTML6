@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>task3</title>
+    <style>
+        .but{
+            width: 10px;
+            height: 10px;
+         border: 1px solid;
+        }
+        a{
+            text-decoration: none;
+            color: azure;
+        }
+        li{
+            list-style: none;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgb(84, 218, 72);
+            color: aliceblue;
+        }
+        .navlinks{
+            color: aliceblue;
+        }
+        .logo{
+            font-size: 30px;
+        }
+        .menu{
+            display: flex;
+            font-size: 18px;
+        }
+        .menu li{
+            padding: 5px 15px;
+        }
+        .menu li a:hover{
+            color: rgb(238, 74, 74);
+        }
+        #checkbox-toggle{
+            display: none;
+        }
+        .hamburger{
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .humburger-line{
+            background-color: rgb(150, 129, 169);
+            display: block;
+            height: 2px;
+            position: relative;
+            width: 24px;
+        }
+        .humburger-line::before,
+        .humburger-line::after{
+            background-color: rgb(150, 129, 169);
+            content: '';
+            display: block;
+            position: absolute;
+            transition: all .2s;
+            width: 100%;
+            height: 100%;
+        }
+        .humburger-line::before{
+            top: 7px;
+        }
+        .humburger-line::after{
+            top: -7px;
+        }
+        @media(max-width: 11111768px){
+            .menu{
+                max-height: 0;
+                overflow: hidden;
+                position: absolute;
+                background-color: rgb(84, 218, 72);
+                text-align: center;
+                right: 0;
+                left: 0;
+                margin-top: 20px;
+            }
+            #checkbox-toggle:checked ~ .menu{
+                display: block;
+                max-height: 100%;
+                transition: all .3s;
+            }
+            .hamburger{
+                display: block;
+                padding: 20px 0px;
+            }
+            .menu li a{
+                display: block;
+                padding: 15px;
+            }
+            .menu li{
+                transition: all .5s;
+            }
+            .menu li:hover{
+                background-color: rgb(77, 198, 66);
+            }
+            #checkbox-toggle:checked~.hamburger .humburger-line{
+                background-color: transparent;
+            }
+            #checkbox-toggle:checked~.hamburger .humburger-line::before{
+                transform: rotate(-45deg);
+                top: 0;
+            }
+            #checkbox-toggle:checked~.hamburger .humburger-line::after{
+                transform: rotate(45deg);
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+   <nav class="navbar">
+    <div class="logo">LOGO</div>
+        <ul>
+            <input type="checkbox" id="checkbox-toggle">
+            <label for="checkbox-toggle" class="hamburger"><span class="humburger-line"></span></label>
+            <div class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">More...</a></li>
+            </div>
+        </ul>
+   </nav>
+</body>
+</html>
