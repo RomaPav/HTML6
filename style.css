@@ -1,0 +1,130 @@
+.div1{
+    width: 960px;
+
+}
+.head{
+    width: 960px;
+    height: auto;
+    border: 0px solid;
+    background-color: rgb(255, 255, 255);
+}
+.left{
+    height:555px;
+    width: 200px;
+    border: 1px solid azure;
+    position: relative;
+    top: -1px;
+    background-color: azure;
+
+}
+.right{
+    height: auto;
+    width: 150px;
+    border: 1px solid rgb(242, 161, 161);
+    position: absolute;
+    top: 0px;
+    left: 813px;
+    background-color: rgb(242, 161, 161);
+}
+
+.central{
+    height: 555px;
+    width: 610px;
+    border: 1px solid blanchedalmond;
+    position: absolute;
+    top: 0px;
+    left: 201px;
+    background-color: blanchedalmond;
+    text-align: left;
+
+}
+.under{
+    width: 960px;
+    height: auto;
+    border: 1px solid rgb(250, 213, 169);
+    position:relative;
+    top: -1px;
+    background-color: rgb(250, 213, 169);
+}  
+.img{
+    position: relative;
+    left: 430px;
+
+} 
+.h{
+    position: relative;
+    left: 10px;
+}
+.par{
+    width: 610px;
+    position: relative;
+    left: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: serif;
+}
+.cen{
+    height: auto;
+    width: 960px;
+    position: relative;
+}
+li{list-style: none;}
+.a1{
+    text-decoration: none;
+    color: rgb(71, 195, 71);
+    text-align: center;
+}
+.a1:hover{
+    text-decoration: underline;
+    color: brown;
+}
+.a1:active{
+    color: rgb(46, 25, 128);
+}
+.a1{
+    text-decoration: none;
+    color: rgb(71, 195, 71);
+    text-align: center;
+}
+.a1:hover{
+    text-decoration: underline;
+    color: brown;
+}
+.a1:active{
+    color: rgb(46, 25, 128);
+}
+.a2{
+    text-decoration: none;
+    color: rgb(114, 85, 210);
+    text-align: center;
+}
+.a2:hover{
+    text-decoration: underline;
+    color: rgb(239, 241, 132);
+}
+.a2:active{
+    color: rgb(117, 0, 96);
+}
+.par2{
+    width: 960px;
+    position: relative;
+    left: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+.a3{
+    text-decoration: none;
+    color: rgb(56, 56, 132);
+    text-align: center;
+    position: relative;
+    left: 10px;
+    top: -2px;
+}
+.a3:hover{
+    text-decoration: underline;
+    color: rgb(194, 18, 197);
+}
+.a3:active{
+    color: rgb(0, 141, 148);
+}
